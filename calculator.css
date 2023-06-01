@@ -1,0 +1,75 @@
+body{
+    background-color: black;
+}
+.box{
+    width: 42vw; 
+    height: 90vh;
+    border: 8px solid goldenrod;
+    box-sizing: content-box;
+    border-radius: 10px;
+    margin-top: 20px;
+    background-image: linear-gradient(goldenrod,black, black,black,black,black, black, goldenrod);
+}
+.container{
+    width: 42wv; height: 60vh;
+    display: grid;
+    grid-template-columns:7vw 7vw 7vw 7vw 7vw;
+}
+.show{
+    width:40vw; height: 20vh;
+    background-color: black;
+    margin-left: 5px;
+    margin-top: 28px;
+    font-size: 64px;
+    font-style: oblique;
+    display: block;
+    border: 7px solid goldenrod;
+    color: gold;
+    border-radius: 30px;
+}
+.keys{
+    width: 7vw; height: 11vh;
+    font-size: 28px;
+    text-align: left;
+    margin-right: 6px;
+    background-color: black;
+    color: gold;
+    border: 2px solid goldenrod;
+}
+.keys:hover{
+    text-shadow: 2px 2px 2px gold ;
+    background-image: linear-gradient(black,grey,black);
+}
+@media  screen and (max-width:650px) {
+    .container{grid-template-columns:15vw 15vw 15vw 15vw 15vw;
+        column-gap: 1vw;
+    }
+    .keys{
+        width: 20vw; height: 15vh;
+        font-size: 18px;
+    }
+    .box{
+        width: 88vw; height: 94vh;
+    }
+    .show{
+        width: 80vw;
+        height: 5vh;
+        font-size:5vw;
+    }
+}
+@media  screen and (min-width:650px) and (max-width:900px) {
+    .container{grid-template-columns:8vw 8vw 8vw 8vw 8vw;
+        column-gap: 1vw;
+    }
+    .keys{
+        width: 10vw; height: 15vh;
+        font-size: 18px;
+    }
+    .box{
+        width: 50vw; height: 94vh;
+    }
+    .show{
+        width: 46vw;
+        height: 5vh;
+        font-size:5vw;
+    } }
